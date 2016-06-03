@@ -1,0 +1,206 @@
+#menu-container {display: none;}
+
+$lg-text:       18px;
+$sm-text:       16px;
+
+$purple:        #3e1532;
+$purple-hover:  #4a173b;
+$green:         #428926;
+$green-hover:   #55983B;
+$yellow:        #f8dc42;
+$pink:          #a02335;
+
+html {font-size: $lg-text;}
+a, a:hover, body {color: $purple;}
+.cl {clear: both;}
+
+
+header {
+    .head-content {
+        height: 91px;
+        width: 100%;
+        .text-wrap {
+            display: table;
+            width: 100%;
+            height: 91px;
+            .text {
+                display: table-cell;
+                ul {
+                    padding: 0;
+                    list-style: none;
+                    li {
+                        font-size: 1.05rem;
+                        padding: 6px 0;
+                        &:before {
+                            content: "";
+                            width: 22px;
+                            height: 22px;
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            position: absolute;
+                            margin-left: -30px;
+                            margin-top: 2px;
+                        }
+                    }
+                    .ic-percent:before {background-image: url('../img/ic-percent.png');}
+                    .ic-list:before {background-image: url('../img/ic-list.png');}
+                }
+            }
+            .middle {vertical-align: middle;}
+            .bottom {vertical-align: bottom;}
+            .right {text-align: right;}
+        }
+        .phone {
+            text-align: right;
+            font-size: 2rem;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 7px 0;
+            line-height: 1;
+            span {
+                font-size: 1rem;
+                font-weight: 100;
+            }
+            a {
+                &:hover {
+                    text-decoration: none;
+                    color: $purple-hover;
+                }
+            }
+        }
+        .button {
+            float: right;
+            font-size: 1rem;
+            color: #fff;
+            padding: 4px 18px;
+            border-radius: 5px;
+            background: #428926;
+            cursor: pointer;
+            &:hover {
+                text-decoration: none;
+                background: $green-hover;
+            }
+            &:before {
+                width: 53px;
+                height: 15px;
+                content: "";
+                position: absolute;
+                background-image:url('../img/online.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-left: -80px;
+                margin-top: 5px;
+            }
+        }
+    }
+    .menu-bg {
+        background: $purple;
+    }
+}
+
+#index_01 {
+    background-image: url('../img/bg-01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 30px 0;
+    .subtitle {
+        font-size: 1.33rem;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: bold;
+        margin: 0;
+    }
+    h1 {
+        font-size: 3.16rem;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: bold;
+        line-height: 1;
+        margin: 0;
+    }
+    .odc {
+        width: 343px;
+        height: 342px;
+        background-image: url('../img/top-offer-ellipse.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 25px auto;
+        .skew {
+            position: absolute;
+            background: $pink;
+            padding: 5px 20px;
+            margin-left: -40px;
+            margin-top: 15px;
+            transform: skewX(-21deg);
+            box-shadow: 6px 16px 24px 1px rgba(0,0,0,0.5);
+            .p01 {
+                font-size: 3.05rem;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: bold;
+                margin: 0;
+                text-align: right;
+                width: 60%;
+                display: block;
+                float: left;
+                line-height: 1;
+                padding-right: 20px;
+                transform: skewX(21deg);
+            }
+            .p02 {
+                font-size: 1.7rem;
+                color: #fff;
+                line-height: 1;
+                margin: 0;
+                text-align: left;
+                width: 40%;
+                float: left;
+                display: block;
+                padding-left: 5px;
+                transform: skewX(21deg);
+                span {
+                    font-size: 1rem;
+                    display: block;
+                }
+            }
+        }
+        .skidka-wrap {
+            display: table;
+            height: 100%;
+            width: 100%;
+            .skidka {
+                display: table-cell;
+                vertical-align: middle;
+                width: 100%;
+                height: 100%;
+                color: $yellow;
+                font-size: 10rem;
+                text-align: center;
+                font-weight: bold;
+                line-height: 1;
+                margin: 0;
+                sup {
+                    font-size: 4rem;
+                    vertical-align: super;
+                }
+            }
+        }
+        .button {
+            
+            font-size: 1.33rem;
+            color: #fff;
+            padding: 4px 18px;
+            border-radius: 5px;
+            background: #428926;
+            cursor: pointer;
+            &:hover {
+                text-decoration: none;
+                background: $green-hover;
+            }
+        }
+    }
+}
