@@ -1,5 +1,3 @@
-#menu-container {display: none;}
-
 $lg-text:       18px;
 $sm-text:       16px;
 
@@ -13,7 +11,41 @@ $pink:          #a02335;
 html {font-size: $lg-text;}
 a, a:hover, body {color: $purple;}
 .cl {clear: both;}
+.more {display: none;}
+#menu-container {display: none;}
+.b-a {
+    &:before {
+        content: "";
+        width: 34px;
+        height: 26px;
+        position: absolute;
+        background-image: url('../img/bef.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin-left: -40px;
+        margin-top: 75px;
+    }
+    &:after {
+        content: "";
+        width: 28px;
+        height: 34px;
+        position: absolute;
+        background-image: url('../img/aft.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin-top: 5px;
+        margin-left: 0px;
+    }
+}
 
+.title {
+    font-size: 4.16rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
 
 header {
     .head-content {
@@ -189,18 +221,44 @@ header {
                 }
             }
         }
-        .button {
-            
-            font-size: 1.33rem;
-            color: #fff;
-            padding: 4px 18px;
-            border-radius: 5px;
-            background: #428926;
-            cursor: pointer;
-            &:hover {
-                text-decoration: none;
-                background: $green-hover;
+        .button-wrap {
+            text-align: center;
+            width: 100%;
+            margin-top: -30px;
+            .button {
+
+                font-size: 1.33rem;
+                color: #fff;
+                padding: 4px 18px;
+                border-radius: 5px;
+                background: #428926;
+                cursor: pointer;
+                &:hover {
+                    text-decoration: none;
+                    background: $green-hover;
+                }
             }
         }
     }
+    .seo {
+        text-align: center;
+        .seo-text {
+            font-size: 0.66rem;
+            display: inline;
+            line-height: 1;
+            h2, h3 {
+                font-size: 0.66rem;
+                display: inline;
+                line-height: 1;
+            }
+            .readmorelink {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+#index_02 {
+    padding: 4vh 0;
 }

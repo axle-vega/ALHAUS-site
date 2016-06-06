@@ -1,0 +1,93 @@
+@media (max-width: 480px) {
+    .seo {display: none;}
+    .title {font-size: 2rem;}
+    .b-a {
+        &:before {display: block;}
+        &:after {display: none;}
+    }
+    header {
+        .menu-bg {
+            height: 2px;
+        }
+        .head-content {
+            height: 55px;
+            padding: 5px 0;
+            .logo {
+                display: none;
+                img {
+                    width: 70%;
+                    margin: 10px auto 0 auto;
+                    display: block;
+                }
+            }
+            .stocks {
+                display: none;
+            }
+            .phone {
+                text-align: center;
+                font-size: 1.7rem;
+                a {
+                    float: left;
+                }
+                #menu-container {
+                    display: inline-block;
+                    float: right;
+                    .menu-btn {
+                        
+                    }
+                }
+            }
+            .button {
+                display: none;
+            }
+        }
+    }
+    #index_01 {
+        h1 {
+            font-size: 1.9rem;
+            padding: 0 15px;
+        }
+        .odc {
+            width: 85%;
+            max-width: 343px;
+            .skew {
+                margin-left: 0;
+                .p01 {
+                    font-size: 2.4rem;
+                }
+                .p02 {
+                    font-size: 1.35rem;
+                    span {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+            .skidka-wrap {
+                .skidka {
+                    font-size: 7rem;
+                    sup {
+                        font-size: 3rem;
+                    }
+                }
+            }
+            .button-wrap {
+                margin-top: -60px;
+                .button {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+    
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+    
+}
