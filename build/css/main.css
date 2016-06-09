@@ -1,11 +1,8 @@
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 .label,sub,sup{vertical-align:baseline}
 button,hr,input{overflow:visible}
+.pushy,pre,textarea{overflow:auto}
 .navbar-fixed-bottom .navbar-collapse,.navbar-fixed-top .navbar-collapse,.pre-scrollable{max-height:340px}
-<<<<<<< HEAD
-=======
-.invisible,.pushy{visibility:hidden}
->>>>>>> origin/master
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
 audio,canvas,progress,video{display:inline-block;vertical-align:baseline}
 a{-webkit-text-decoration-skip:objects;background-color:transparent}
@@ -25,17 +22,10 @@ legend{box-sizing:border-box;max-width:100%;white-space:normal}
 [type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}
 ::-webkit-input-placeholder{color:inherit;opacity:.54}
 ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
-<<<<<<< HEAD
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-=======
-/*!
- * Bootstrap v3.3.6 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
->>>>>>> origin/master
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html{font-family:"PT Sans Narrow",Arial,sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
@@ -49,7 +39,6 @@ sub{bottom:-.25em}
 img{vertical-align:middle}
 svg:not(:root){overflow:hidden}
 hr{height:0;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}
-pre,textarea{overflow:auto}
 code,kbd,pre,samp{font-size:1em}
 button,input,optgroup,select,textarea{margin:0;font:inherit;color:inherit}
 .glyphicon,address{font-style:normal}
@@ -387,6 +376,7 @@ address,blockquote .small,blockquote footer,blockquote small,dd,dt,pre{line-heig
 .text-lowercase{text-transform:lowercase}
 .text-uppercase{text-transform:uppercase}
 .text-capitalize{text-transform:capitalize}
+.initialism,.title{text-transform:uppercase}
 .text-muted{color:#777}
 .text-primary{color:#337ab7}
 a.text-primary:focus,a.text-primary:hover{color:#286090}
@@ -423,7 +413,7 @@ dd{margin-left:0}
 }
 .btn-group-vertical>.btn-group:after,.btn-toolbar:after,.cl,.clearfix:after,.container-fluid:after,.container:after,.dl-horizontal dd:after,.form-horizontal .form-group:after,.modal-footer:after,.modal-header:after,.nav:after,.navbar-collapse:after,.navbar-header:after,.navbar:after,.pager:after,.panel-body:after,.row:after{clear:both}
 abbr[data-original-title],abbr[title]{cursor:help;border-bottom:1px dotted #777}
-.initialism{font-size:90%;text-transform:uppercase}
+.initialism{font-size:90%}
 blockquote{padding:10px 20px;margin:0 0 20px;font-size:17.5px;border-left:5px solid #eee}
 blockquote .small,blockquote footer,blockquote small{display:block;font-size:80%;color:#777}
 legend,pre{display:block;color:#333}
@@ -981,11 +971,7 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
 .navbar-collapse.in{overflow-y:visible}
 .navbar-fixed-bottom .navbar-collapse,.navbar-fixed-top .navbar-collapse,.navbar-static-top .navbar-collapse{padding-right:0;padding-left:0}
 }
-<<<<<<< HEAD
 .embed-responsive,.modal,.modal-open,.progress{overflow:hidden}
-=======
-.carousel-inner,.embed-responsive,.modal,.modal-open,.progress{overflow:hidden}
->>>>>>> origin/master
 @media (max-device-width:480px) and (orientation:landscape){.navbar-fixed-bottom .navbar-collapse,.navbar-fixed-top .navbar-collapse{max-height:200px}
 }
 .container-fluid>.navbar-collapse,.container-fluid>.navbar-header,.container>.navbar-collapse,.container>.navbar-header{margin-right:-15px;margin-left:-15px}
@@ -1117,9 +1103,10 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
 .pager li>a:focus,.pager li>a:hover{text-decoration:none;background-color:#eee}
 .pager .next>a,.pager .next>span{float:right}
 .pager .previous>a,.pager .previous>span{float:left}
+.close,.list-group-item>.badge{float:right}
 .pager .disabled>a,.pager .disabled>a:focus,.pager .disabled>a:hover,.pager .disabled>span{color:#777;cursor:not-allowed;background-color:#fff}
-a.badge:focus,a.badge:hover,a.label:focus,a.label:hover{color:#fff;cursor:pointer;text-decoration:none}
 .label{display:inline;padding:.2em .6em .3em;font-size:75%;color:#fff;border-radius:.25em}
+a.label:focus,a.label:hover{color:#fff;text-decoration:none;cursor:pointer}
 .label:empty{display:none}
 .label-default{background-color:#777}
 .label-default[href]:focus,.label-default[href]:hover{background-color:#5e5e5e}
@@ -1137,9 +1124,9 @@ a.badge:focus,a.badge:hover,a.label:focus,a.label:hover{color:#fff;cursor:pointe
 .badge:empty{display:none}
 .media-object,.thumbnail{display:block}
 .btn-group-xs>.btn .badge,.btn-xs .badge{top:0;padding:1px 5px}
+a.badge:focus,a.badge:hover{color:#fff;text-decoration:none;cursor:pointer}
 .list-group-item.active>.badge,.nav-pills>.active>a>.badge{color:#337ab7;background-color:#fff}
 .jumbotron,.jumbotron .h1,.jumbotron h1{color:inherit}
-.list-group-item>.badge{float:right}
 .list-group-item>.badge+.badge{margin-right:5px}
 .nav-pills>li>a>.badge{margin-left:3px}
 .jumbotron{padding-top:30px;padding-bottom:30px;margin-bottom:30px;background-color:#eee}
@@ -1206,11 +1193,7 @@ to{background-position:0 0}
 .media-right,.media>.pull-right{padding-left:10px}
 .media-left,.media>.pull-left{padding-right:10px}
 .media-body,.media-left,.media-right{display:table-cell;vertical-align:top}
-<<<<<<< HEAD
-.media-middle,header .head-content .text-wrap .middle{vertical-align:middle}
-=======
 .media-middle{vertical-align:middle}
->>>>>>> origin/master
 .media-bottom{vertical-align:bottom}
 .media-heading{margin-top:0;margin-bottom:5px}
 .media-list{padding-left:0;list-style:none}
@@ -1320,7 +1303,7 @@ a.list-group-item-danger.active,a.list-group-item-danger.active:focus,a.list-gro
 .well blockquote{border-color:#ddd;border-color:rgba(0,0,0,.15)}
 .well-lg{padding:24px;border-radius:6px}
 .well-sm{padding:9px;border-radius:3px}
-.close{float:right;font-size:21px;line-height:1;color:#000;text-shadow:0 1px 0 #fff;filter:alpha(opacity=20);opacity:.2}
+.close{font-size:21px;line-height:1;color:#000;text-shadow:0 1px 0 #fff;filter:alpha(opacity=20);opacity:.2}
 .popover,.tooltip{font-family:"PT Sans Narrow",Arial,sans-serif;font-style:normal;font-weight:400;line-height:1.42857143;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;word-wrap:normal;white-space:normal;line-break:auto;text-decoration:none}
 .close:focus,.close:hover{color:#000;text-decoration:none;cursor:pointer;filter:alpha(opacity=50);opacity:.5}
 button.close{-webkit-appearance:none;padding:0;cursor:pointer;background:0 0;border:0}
@@ -1367,11 +1350,7 @@ button.close{-webkit-appearance:none;padding:0;cursor:pointer;background:0 0;bor
 .tooltip.bottom-left .tooltip-arrow{right:5px;margin-top:-5px}
 .tooltip.bottom-right .tooltip-arrow{left:5px;margin-top:-5px}
 .popover{position:absolute;top:0;left:0;z-index:1060;display:none;max-width:276px;padding:1px;font-size:14px;text-align:left;text-align:start;background-color:#fff;-webkit-background-clip:padding-box;background-clip:padding-box;border:1px solid #ccc;border:1px solid rgba(0,0,0,.2);border-radius:6px;-webkit-box-shadow:0 5px 10px rgba(0,0,0,.2);box-shadow:0 5px 10px rgba(0,0,0,.2)}
-<<<<<<< HEAD
 .carousel-caption,.carousel-control{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.6);text-align:center}
-=======
-.carousel-caption,.carousel-control{color:#fff;text-align:center;text-shadow:0 1px 2px rgba(0,0,0,.6)}
->>>>>>> origin/master
 .popover.top{margin-top:-10px}
 .popover.right{margin-left:10px}
 .popover.bottom{margin-top:10px}
@@ -1391,11 +1370,7 @@ button.close{-webkit-appearance:none;padding:0;cursor:pointer;background:0 0;bor
 .popover.bottom>.arrow:after{top:1px;margin-left:-10px;content:" ";border-top-width:0;border-bottom-color:#fff}
 .popover.left>.arrow{top:50%;right:-11px;margin-top:-11px;border-right-width:0;border-left-color:#999;border-left-color:rgba(0,0,0,.25)}
 .popover.left>.arrow:after{right:1px;border-right-width:0;border-left-color:#fff}
-<<<<<<< HEAD
 .carousel-inner{width:100%;overflow:hidden}
-=======
-.carousel-inner{width:100%}
->>>>>>> origin/master
 .carousel-inner>.item{position:relative;display:none;-webkit-transition:.6s ease-in-out left;-o-transition:.6s ease-in-out left;transition:.6s ease-in-out left}
 .carousel-inner>.item>a>img,.carousel-inner>.item>img{line-height:1}
 @media all and (transform-3d),(-webkit-transform-3d){.carousel-inner>.item{-webkit-transition:-webkit-transform .6s ease-in-out;-o-transition:-o-transform .6s ease-in-out;transition:transform .6s ease-in-out;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-perspective:1000px;perspective:1000px}
@@ -1421,6 +1396,7 @@ button.close{-webkit-appearance:none;padding:0;cursor:pointer;background:0 0;bor
 .carousel-control .icon-next,.carousel-control .icon-prev{width:20px;height:20px;font-family:serif;line-height:1}
 .carousel-control .icon-prev:before{content:'\2039'}
 .carousel-control .icon-next:before{content:'\203a'}
+.quotes:after,.quotes:before{content:" "}
 .carousel-indicators{position:absolute;bottom:10px;left:50%;z-index:15;width:60%;padding-left:0;margin-left:-30%;text-align:center;list-style:none}
 .carousel-indicators li{display:inline-block;width:10px;height:10px;margin:1px;text-indent:-999px;cursor:pointer;background-color:#000\9;background-color:rgba(0,0,0,0);border:1px solid #fff;border-radius:10px}
 .carousel-indicators .active{width:12px;height:12px;margin:0;background-color:#fff}
@@ -1439,10 +1415,7 @@ button.close{-webkit-appearance:none;padding:0;cursor:pointer;background:0 0;bor
 .hide{display:none!important}
 .show{display:block!important}
 .hidden,.visible-lg,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block,.visible-md,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-sm,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-xs,.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block{display:none!important}
-<<<<<<< HEAD
 .invisible{visibility:hidden}
-=======
->>>>>>> origin/master
 .text-hide{font:0/0 a;color:transparent;background-color:transparent;border:0}
 .affix{position:fixed}
 @-ms-viewport{width:device-width}
@@ -1501,15 +1474,9 @@ td.visible-print,th.visible-print{display:table-cell!important}
 @media print{.visible-print-inline-block{display:inline-block!important}
 .hidden-print{display:none!important}
 }
-<<<<<<< HEAD
 /*! Pushy - v1.0.0 - 2016-3-1
 * Pushy is a responsive off-canvas navigation menu using CSS transforms & transitions.
 * https://github.com/christophery/pushy/
-=======
-/*! Pushy - v1.0.0 - 2016-3-1
-* Pushy is a responsive off-canvas navigation menu using CSS transforms & transitions.
-* https://github.com/christophery/pushy/
->>>>>>> origin/master
 * by Christopher Yee */
 .pushy-open-left .pushy,.pushy-open-right .pushy{-webkit-transform:translateZ(0);transform:translateZ(0)}
 @keyframes b{0%{opacity:0}
@@ -1520,36 +1487,23 @@ to{opacity:1}
 }
 .pushy-submenu ul{padding-left:15px}
 .pushy-submenu>a:after{content:'';display:block;height:11px;width:8px;position:absolute;top:50%;right:15px;background:url(img/arrow.svg) no-repeat;-webkit-transform:translateY(-50%);transform:translateY(-50%);-webkit-transition:-webkit-transform .2s;transition:-webkit-transform .2s;transition:transform .2s;transition:transform .2s,-webkit-transform .2s}
-<<<<<<< HEAD
-.b-a:after,.b-a:before,header .head-content .text-wrap .text ul li:before{background-repeat:no-repeat;background-size:contain;background-position:center;content:"";position:absolute}
 .pushy-submenu-open a:after{-webkit-transform:translateY(-50%) rotate(90deg);transform:translateY(-50%) rotate(90deg)}
 html{-webkit-tap-highlight-color:transparent;font-size:18px}
 a,a:hover,body{color:#3e1532}
 #menu-container,.more{display:none}
-.b-a:before{width:34px;height:26px;background-image:url(../img/bef.png);margin-left:-40px;margin-top:75px}
-.b-a:after{width:28px;height:34px;background-image:url(../img/aft.png);margin-top:5px;margin-left:0}
-.title{font-size:4.16rem;text-transform:uppercase;font-weight:700;text-align:center}
-=======
-.pushy-submenu-open a:after{-webkit-transform:translateY(-50%) rotate(90deg);transform:translateY(-50%) rotate(90deg)}
-#menu-container{display:none}
-html{-webkit-tap-highlight-color:transparent;font-size:18px}
-a,a:hover,body{color:#3e1532}
->>>>>>> origin/master
+.quotes:after,.quotes:before{background-size:cover;position:relative;display:inline-block;background-repeat:no-repeat;background-position:center}
+.quotes:before{width:34px;height:26px;max-width:34px;max-height:26px;background-image:url(../img/bef.png);left:-.1em;top:.3em}
+.quotes:after{width:28px;height:34px;max-width:28px;max-height:34px;background-image:url(../img/aft.png);left:.1em;top:-.5em}
+.title{font-size:4.16rem;font-weight:700;text-align:center}
 header .head-content{height:91px;width:100%}
 header .head-content .text-wrap{display:table;width:100%;height:91px}
 header .head-content .text-wrap .text{display:table-cell}
 header .head-content .text-wrap .text ul{padding:0;list-style:none}
 header .head-content .text-wrap .text ul li{font-size:1.05rem;padding:6px 0}
-<<<<<<< HEAD
-header .head-content .text-wrap .text ul li:before{width:22px;height:22px;margin-left:-30px;margin-top:2px}
-header .head-content .text-wrap .text ul .ic-percent:before{background-image:url(../img/ic-percent.png)}
-header .head-content .text-wrap .text ul .ic-list:before{background-image:url(../img/ic-list.png)}
-=======
 header .head-content .text-wrap .text ul li:before{content:"";width:22px;height:22px;background-repeat:no-repeat;background-size:contain;background-position:center;position:absolute;margin-left:-30px;margin-top:2px}
 header .head-content .text-wrap .text ul .ic-percent:before{background-image:url(../img/ic-percent.png)}
 header .head-content .text-wrap .text ul .ic-list:before{background-image:url(../img/ic-list.png)}
 header .head-content .text-wrap .middle{vertical-align:middle}
->>>>>>> origin/master
 header .head-content .text-wrap .bottom{vertical-align:bottom}
 header .head-content .text-wrap .right{text-align:right}
 header .head-content .phone{text-align:right;font-size:2rem;font-weight:700;text-decoration:none;padding:7px 0;line-height:1}
@@ -1569,17 +1523,22 @@ header .menu-bg{background:#3e1532}
 #index_01 .odc .skew .p01{font-size:3.05rem;color:#fff;text-transform:uppercase;font-weight:700;margin:0;text-align:right;width:60%;display:block;float:left;line-height:1;padding-right:20px;-webkit-transform:skewX(21deg);transform:skewX(21deg)}
 #index_01 .odc .skew .p02{font-size:1.7rem;color:#fff;line-height:1;margin:0;text-align:left;width:40%;float:left;display:block;padding-left:5px;-webkit-transform:skewX(21deg);transform:skewX(21deg)}
 #index_01 .odc .skew .p02 span{font-size:1rem;display:block}
-#index_01 .odc .skidka-wrap{display:table;height:100%;width:100%}
+#index_01 .odc .skidka-wrap{display:table;height:100%;width:100%;padding-top:30px}
 #index_01 .odc .skidka-wrap .skidka{display:table-cell;vertical-align:middle;width:100%;height:100%;color:#f8dc42;font-size:10rem;text-align:center;font-weight:700;line-height:1;margin:0}
 #index_01 .odc .skidka-wrap .skidka sup{font-size:4rem;vertical-align:super}
-<<<<<<< HEAD
 #index_01 .odc .button-wrap{text-align:center;width:100%;margin-top:-30px}
 #index_01 .odc .button-wrap .button{font-size:1.33rem;color:#fff;padding:4px 18px;border-radius:5px;background:#428926;cursor:pointer}
 #index_01 .odc .button-wrap .button:hover{text-decoration:none;background:#55983B}
+#index_01 .seo .seo-text .readmorelink,#index_02 .bullets .item .wrap a{cursor:pointer;text-decoration:underline}
 #index_01 .seo{text-align:center}
 #index_01 .seo .seo-text,#index_01 .seo .seo-text h2,#index_01 .seo .seo-text h3{font-size:.66rem;display:inline;line-height:1}
-#index_01 .seo .seo-text .readmorelink{text-decoration:underline;cursor:pointer}
 #index_02{padding:4vh 0}
+#index_02 .bullets{margin-top:30px;width:100%}
+#index_02 .bullets .item{min-height:240px;margin-bottom:30px}
+#index_02 .bullets .item img{width:100%;max-width:127px;display:block;margin:0 auto}
+#index_02 .bullets .item h4{font-size:1.33rem;font-weight:700;text-align:center;color:#3e1532;margin:20px auto 10px}
+#index_02 .bullets .item .wrap{text-align:center}
+#index_02 .bullets .item .wrap a{font-size:.66rem;opacity:.5;font-weight:100;color:#3e1532}
 @media (max-width:480px){.seo{display:none}
 .title{font-size:2rem}
 .b-a:before{display:block}
@@ -1607,16 +1566,7 @@ header .head-content .button{display:none}
 * Pushy is a responsive off-canvas navigation menu using CSS transforms & transitions.
 * https://github.com/christophery/pushy/
 * by Christopher Yee */
-.pushy{position:fixed;width:230px;height:100%;top:0;padding-top:60px;z-index:9999;background:#191918;overflow:auto;visibility:hidden;-webkit-overflow-scrolling:touch}
-=======
-#index_01 .odc .button{font-size:1.33rem;color:#fff;padding:4px 18px;border-radius:5px;background:#428926;cursor:pointer}
-#index_01 .odc .button:hover{text-decoration:none;background:#55983B}
-/*! Pushy - v1.0.0 - 2016-3-1
-* Pushy is a responsive off-canvas navigation menu using CSS transforms & transitions.
-* https://github.com/christophery/pushy/
-* by Christopher Yee */
-.pushy{position:fixed;width:230px;height:100%;top:0;padding-top:60px;z-index:9999;background:#191918;overflow:auto;-webkit-overflow-scrolling:touch}
->>>>>>> origin/master
+.pushy{position:fixed;width:230px;height:100%;top:0;padding-top:60px;z-index:9999;background:#191918;visibility:hidden;-webkit-overflow-scrolling:touch}
 .pushy .menu-btn{margin-top:-50px;border:none}
 .pushy .menu-list{z-index:100;position:relative}
 .pushy a{display:block;color:#fff;padding:7px 20px;text-decoration:none;outline:0;line-height:1.1;font-size:1.4rem;background:#000}
