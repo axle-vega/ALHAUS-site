@@ -13,30 +13,37 @@ a, a:hover, body {color: $purple;}
 .cl {clear: both;}
 .more {display: none;}
 #menu-container {display: none;}
-.b-a {
+
+.quotes {
     &:before {
-        content: "";
         width: 34px;
         height: 26px;
-        position: absolute;
-        background-image: url('../img/bef.png');
+        max-width: 34px;
+        max-height: 26px;
+        content: " ";
+        background-image: url(../img/bef.png);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: contain;
-        margin-left: -40px;
-        margin-top: 75px;
+        background-size: cover;
+        position: relative;
+        display: inline-block;
+        left: -.1em;
+        top: .3em;
     }
     &:after {
-        content: "";
         width: 28px;
         height: 34px;
-        position: absolute;
-        background-image: url('../img/aft.png');
+        max-width: 28px;
+        max-height: 34px;
+        content: " ";
+        background-image: url(../img/aft.png);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: contain;
-        margin-top: 5px;
-        margin-left: 0px;
+        background-size: cover;
+        position: relative;
+        display: inline-block;
+        left: .1em;
+        top: -.5em;
     }
 }
 
@@ -204,6 +211,7 @@ header {
             display: table;
             height: 100%;
             width: 100%;
+            padding-top: 30px;
             .skidka {
                 display: table-cell;
                 vertical-align: middle;
@@ -261,4 +269,37 @@ header {
 
 #index_02 {
     padding: 4vh 0;
+    .bullets {
+        margin-top: 30px;
+        width: 100%;
+        .item {
+            min-height: 240px;
+            margin-bottom: 30px;
+            img {
+                width: 100%;
+                max-width: 127px;
+                display: block;
+                margin: 0 auto;
+            }
+            h4 {
+                font-size: 1.33rem;
+                font-weight: bold;
+                text-align: center;
+                color: $purple;
+                //line-height: 1;
+                margin: 20px auto 10px auto;
+            }
+            .wrap {
+                text-align: center;
+                a {
+                    font-size: 0.66rem;
+                    opacity: 0.5;
+                    font-weight: 100;
+                    color: $purple;
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
 }
