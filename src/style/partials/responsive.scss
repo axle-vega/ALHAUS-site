@@ -1,8 +1,8 @@
 @media (max-width: 480px) {
     .seo {display: none;}
     .title {font-size: 2rem;}
-    .b-a {
-        &:before {display: block;}
+    .quotes {
+        &:before {display: none;}
         &:after {display: none;}
     }
     header {
@@ -87,7 +87,85 @@
                             font-size: 1rem;
                             font-weight: 400;
                             margin-top: 15px;
-                            //br {display: none;}
+                            br {display: none;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #index_03 {
+        .carousel-wrap {
+            h4 {display: none;}
+            .carousel {
+                .descript {
+                    .carousel-inner {
+                        height: 160px;
+                        padding: 0 15px;
+                        margin-bottom: 10px;
+                        .item {
+                            .info {
+                                height: 100%;
+                                width: 100%;
+                                max-width: none;
+                                float: none;
+                                background: none;
+                                .name-wrap {
+                                    height: 50%;
+                                    display: table;
+                                    width: 100%;
+                                    .name {
+                                        vertical-align: top;
+                                        p {
+                                            font-size: 1.3rem;
+                                            text-align: center;
+                                            padding: 3px 0;
+                                            background: $purple;
+                                            br {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                                .description-wrap {
+                                    width: 100%;
+                                    .text-wrap {
+                                        display: none;
+                                    }
+                                    .link-wrap {
+                                        display: table-cell;
+                                        vertical-align: bottom;
+                                        .link {
+                                            display: block;
+                                            text-align: center;
+                                            padding: 0;
+                                            background: rgba(255,255,255,0.7);
+                                            a {
+                                                color: #000;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .indicators-wrap {
+                    .carousel-indicators {
+                        .item {
+                            .wrap {
+                                height: 60px;
+                                .text-wrap {
+                                    .text {
+                                        padding: 5px;
+                                        p {
+                                            font-size: 0.9rem;
+                                            text-align: center;
+                                            br {display: none;}
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -97,6 +175,10 @@
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
+    .quotes {
+        &:before {display: none;}
+        &:after {display: none;}
+    }
     #index_02 {
         .bullets {
             .item {
@@ -116,6 +198,10 @@
 }
 
 @media (min-width: 768px) and (max-width: 990px) {
+    .quotes {
+        &:before {display: none;}
+        &:after {display: none;}
+    }
     #index_02 {
         .bullets {
             .item {
